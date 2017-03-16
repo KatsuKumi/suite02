@@ -20,3 +20,15 @@
 */
 
 // write your code below this comment
+
+function randomTemperatur(valuetype){
+    var tempkelvin = Math.floor((Math.random() * 0) - 273);
+    if (valuetype == "c"){
+        return tempkelvin-273;
+    }
+    else if (valuetype == "f"){
+        return tempkelvin*( 9/5 ) - 459.67;
+    }
+}
+console.log(randomTemperatur("c"));
+console.log(randomTemperatur("f"));
