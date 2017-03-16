@@ -27,3 +27,36 @@
 */
 
 // write your code below this comment
+
+function evalExpr(nb1, nb2, operator){
+    if (operator == "*"){
+        return multiply(nb1, nb2)
+    }
+    else if (operator == "+"){
+        return addition(nb1, nb2)
+    }
+    else if (operator == "%"){
+        return modulo(nb1, nb2)
+    }
+    else if (operator == "-"){
+        return substract(nb1, nb2)
+    }
+    else if (operator == "/"){
+        return nb2 != 0 ? divide(nb1, nb2) : 0;
+    }
+}
+function multiply(nb1, nb2){
+    return nb1*nb2;
+}
+function addition(nb1, nb2){
+    return nb1+nb2;
+}
+function modulo(nb1, nb2){
+    return nb1%nb2;
+}
+function substract(nb1, nb2){
+    return nb1-nb2;
+}
+function divide(nb1, nb2){
+    return nb1/nb2;
+}
