@@ -14,3 +14,16 @@
 */
 
 // write your code below this comment
+
+function findSumByMultiples(max){
+    if (!isNaN(max)){
+        var sum = 0;
+        for (var nb = 0; nb < max; nb++){
+            if (nb % 3 == 0 || nb % 5 == 0){
+                sum += nb;
+            }
+        }
+        return sum;
+    }
+}
+console.log(findSumByMultiples(2000));
