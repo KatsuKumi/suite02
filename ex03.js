@@ -10,7 +10,7 @@
     2) Write a second function "priceToNumber" that convert a price to a number.
 
         If we got the string "4,59€" in parameter,
-        you need to return a float number that is equal to 4,59;
+        you need to return a float number that is equal to 4.59;
 
     3) If we pass an empty string or negative number, return 0 or empty string;
 
