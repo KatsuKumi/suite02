@@ -24,3 +24,7 @@
 
 // write your code below this comment
 
+function bubbleSort(numArray){
+    return numArray.sort();
+}
+console.log(bubbleSort([8, 3, 0]));

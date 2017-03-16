@@ -16,3 +16,16 @@
 
 // write your code below this comment
 
+function smallestMultipleFor(nb1, nb2){
+    for(var i = 1; i < Infinity ;i++){
+        for( var nb = nb1; nb <= nb2; nb++){
+            if  (i % nb != 0){
+                break;
+            }
+            else if (nb == nb2){
+                return i;
+            }
+        }
+    }
+}
+console.log(smallestMultipleFor(1,20))

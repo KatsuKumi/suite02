@@ -17,3 +17,14 @@
 */
 
 // write your code below this comment
+
+function randomTemperatur(valuetype){
+    if (valuetype == "c"){
+        return Math.floor((Math.random() * 500) - 273);
+    }
+    else if (valuetype == "f"){
+        return Math.floor((Math.random() * 900) - 459);
+    }
+}
+console.log(randomTemperatur("c"));
+console.log(randomTemperatur("f"));
