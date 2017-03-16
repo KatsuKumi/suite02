@@ -21,3 +21,13 @@
 */
 
 // write your code below this comment
+function numberToPrice(number){
+    return  number > 0 ? (number.toFixed(2) + "€") : "";
+}
+function priceToNumber(price){
+    return price.length != 0 ? parseFloat(price.replace(",", ".")) : 0;
+}
+console.log(numberToPrice(4));
+console.log(priceToNumber("4,59€"))
+console.log(numberToPrice(-5));
+console.log(priceToNumber(""))
