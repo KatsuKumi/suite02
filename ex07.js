@@ -27,3 +27,14 @@
 
 // write your code below this comment
 
+function displayCurrentTime(){
+        setTimeout(function(){
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            console.log(hours + ":" + minutes + ":" + seconds);
+            displayCurrentTime();
+        }, 1000);
+}
+displayCurrentTime();
