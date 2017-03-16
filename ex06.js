@@ -25,6 +25,24 @@
 // write your code below this comment
 
 function bubbleSort(numArray){
-    return numArray.sort();
+    var sortedarray = [];
+    for(i of numArray){
+        if(sortedarray[0] != undefined){
+            for(num = 0; num < sortedarray.length; num++){
+                if( i < sortedarray[num] ){
+                    sortedarray.splice(num, 0, i); 
+                    break;
+                }
+                else if (sortedarray.length-1 == num){
+                    sortedarray.push(i);
+                    break;
+                }
+            }
+        }
+        else{
+            sortedarray.push(i);
+        }
+    }
+    return sortedarray;
 }
-console.log(bubbleSort([8, 3, 0]));
+console.log(bubbleSort([5, 4, 8, 3, 0, 1555, 1444, 6167, 84, 12,  6, 2]));

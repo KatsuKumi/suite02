@@ -58,7 +58,7 @@ function bigsquare(map) {
     };
     for (var line in map) {
         var lignnb = parseInt(line);
-        var theligne = map[line];
+        var theligne = map[lignnb];
         for (var box in theligne) {
             var colnb = parseInt(box);
             if (theligne[colnb] == point) {
