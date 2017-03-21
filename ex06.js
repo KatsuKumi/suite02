@@ -17,6 +17,9 @@
 
     Tips:
     use google
+    
+    Validations:
+    Use the bubble sort algorithm (wikipedia);
 
     Write your own tests !
     
